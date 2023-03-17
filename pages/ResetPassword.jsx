@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from '../components/Header';
-import Banner from '../components/Banner';
+
 
 function ResetPassword() {
   return (
@@ -46,7 +46,6 @@ function ResetPassword() {
 
       </main>
 
-      <Banner />
 
     </div>
   );

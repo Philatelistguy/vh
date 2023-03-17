@@ -2,7 +2,7 @@ import React from 'react';
 import  Link  from 'next/link';
 
 import Header from '../components/Header';
-import Banner from '../components/Banner';
+
 
 function SignUp() {
   return (
@@ -91,7 +91,7 @@ function SignUp() {
 
       </main>
 
-      <Banner />
+
 
     </div>
   );
