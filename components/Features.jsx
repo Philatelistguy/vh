@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Transition from '../components/Transition';
-
+import Image from 'next/image'
 function Features() {
 
   const [tab, setTab] = useState(1);
@@ -110,7 +110,7 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative hidden md:block mt-40 inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src="/cyber-bg.png" width="500" height="462" alt="Features bg" />
+                    <Image className="md:max-w-none mx-auto rounded" src="/cyber-bg.png" width="500" height="462" alt="Features bg" />
                   </div>
                 </Transition>
                 {/* Item 2 */}
@@ -126,7 +126,7 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative hidden md:block mt-40 inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src="/cyber-bg.png" width="500" height="462" alt="Features bg" />
+                    <Image className="md:max-w-none mx-auto rounded" src="/cyber-bg.png" width="500" height="462" alt="Features bg" />
                   </div>
                 </Transition>
                 {/* Item 3 */}
@@ -142,7 +142,7 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative hidden md:block mt-40 inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src="/cyber-bg.png" width="500" height="462" alt="Features bg" />
+                    <Image className="md:max-w-none mx-auto rounded" src="/cyber-bg.png" width="500" height="462" alt="Features bg" />
                   </div>
                 </Transition>
               </div>

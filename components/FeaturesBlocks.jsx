@@ -1,8 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
+
+
 function FeaturesBlocks() {
   return (
-    <div>
+    <div data-aos="zoom-y-out">
     <section className="relative">
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
@@ -27,7 +29,7 @@ function FeaturesBlocks() {
           </div>
 
           {/* Items */}
-          <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
+          <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none" data-aos="zoom-y-out" data-aos-delay="500">
 
             {/* 1st item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
