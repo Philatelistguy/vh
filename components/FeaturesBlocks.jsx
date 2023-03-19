@@ -44,7 +44,7 @@ function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Web Scraper</h4>
+              <h3 className="text-xl font-bold leading-snug tracking-tight mb-1">Web Scraper</h3>
               <p className="text-gray-600 text-center">With SCH1.0 our own Web scraper you can search the Web and get search results in a Software Readable JSON format.</p>
             </div>
 
@@ -60,7 +60,7 @@ function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">SMTP-HTTP API</h4>
+              <h3 className="text-xl font-bold leading-snug tracking-tight mb-1">SMTP-HTTP API</h3>
               <p className="text-gray-600 text-center">Our versatile SMTP to HTTP API sits in front of your SMTP server as a gateway and enables HTTP API handling.</p>
             </div>
 
@@ -75,7 +75,7 @@ function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Communication</h4>
+              <h3 className="text-xl font-bold leading-snug tracking-tight mb-1">Communication</h3>
               <p className="text-gray-600 text-center">With our ConnectX API your Agents can connect with your customers easily powered by Amazon Connect.</p>
             </div>
           </div>
@@ -84,7 +84,7 @@ function FeaturesBlocks() {
         
       </div>
     </section>
-    <div className="max-w-3xl mx-auto text-center pt-12 md:pb-16">
+    <div className="max-w-3xl mx-auto mb-20 sm:mb-0 text-center pt-12 md:pb-16">
             <h1 className="h2 mb-4">Contact Me to Know More</h1>
             <Link href="/Contact" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
                   <span>Contact</span>

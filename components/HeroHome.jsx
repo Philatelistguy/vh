@@ -33,10 +33,10 @@ function HeroHome() {
 
           {/* Section header */}
           <div className="text-left pb-12 md:pb-16">
-            <h1 className="text-5xl sm:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out"><TypeAnimation sequence={['Bonjour',2000, ]} speed={200}  wrapper="span" repeat={Infinity} /></h1>
-            <h2 className='text-3xl sm:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 data-aos="zoom-y-out"'><span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400"><TypeAnimation sequence={['from Anish Nayak',1000, ]} speed={200}  wrapper="span" repeat={Infinity} /></span></h2>
+            <h1 className="text-5xl sm:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out"><TypeAnimation sequence={[1500,'Bonjour' ]} speed={250}  wrapper="span" repeat={Infinity} /></h1>
+            <h2 className='text-3xl sm:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 'data-aos="zoom-y-out"><span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400"><TypeAnimation sequence={[1500,"from Anish Nayak", ]} speed={250}  wrapper="span" cursor={true} repeat={Infinity} /></span></h2>
             <div className="flex flex-col	  mx-auto">
-              <p className="text-3xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="2000">Welcome to the tech hub</p>
+              <p className="text-3xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="2500">Welcome to the tech hub</p>
             </div>
           </div>
 
@@ -44,7 +44,7 @@ function HeroHome() {
           <div>
             <div className="relative flex justify-center mb-8" data-aos="zoom-y-out" data-aos-delay="450">
               <div className="flex flex-col justify-center">
-                <Image className="mx-auto" src="/hero-image.png" width="768" height="432" alt="Hero" />
+                <Image className="mx-auto" src="/hero-image.png"  loading="lazy" width="768" height="432" alt="Hero" />
                 <svg className="absolute inset-0 max-w-full mx-auto md:max-w-none h-auto" width="768" height="432" viewBox="0 0 768 432" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                   <defs>
                     <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="hero-ill-a">

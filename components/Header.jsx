@@ -40,7 +40,7 @@ export default function Header() {
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
-                <Link href="https://search.anishnayak.com" className="btn-sm text-gray-100 bg-gray-500 hover:bg-gray-400 ml-3">Search</Link>
+                <Link href="https://search.anishnayak.com" className="btn-sm text-gray-100 bg-gray-700 hover:bg-gray-400 ml-3">Search</Link>
               </li>
               <li>
                 <Link href="/Contact" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
