@@ -1,9 +1,13 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-
+import { NextStrictCSP } from 'next-strict-csp'
+const HeadCSP = Head
 export default function Document() {
   return (
     <Html lang="en">
-      <Head>
+      <HeadCSP>
+          
+    <meta httpEquiv="Content-Security-Policy" />
+          
     <meta charSet="utf-8" />
     <link rel="icon" href="/favicon.ico" />
 
@@ -44,9 +48,11 @@ export default function Document() {
     <link rel="apple-touch-icon" href="/logo192.png" />
     
     <link rel="manifest" href="/manifest.json" />
-
-      </ Head>
+      </ HeadCSP>
       <body>
+
+
+
         <Main />
         <NextScript />
       </body>
