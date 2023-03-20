@@ -8,7 +8,7 @@ function Footer() {
 
       
         {/* Bottom area */}
-        <div className="md:flex md:items-center md:justify-between py-4 md:py-8 \">
+        <div className="flex flex-col md:flex-row md:items-center justify-center items-center md:justify-between py-4 md:py-8 \">
 
           {/* Social links */}
           <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">

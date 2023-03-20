@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import  Link  from 'next/link';
 import netlifyAuth from './netlifyAuth';
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
 export default function Header() {
 
 
+const [click, setNav] = useState(false)
+const handlenav = ()=> setNav(!click)
+const handleClose =()=> setNav(!click)
   let [loggedIn, setLoggedIn] = useState(netlifyAuth.isAuthenticated)
   let [user, setUser] = useState(null)
   let login = () => {
@@ -61,19 +65,19 @@ export default function Header() {
           </div>
 
           {/* Site navigation */}
-          <nav className="flex flex-grow">
-            
-            <ul className="flex flex-grow justify-end flex-wrap items-center">
+          <nav className="flex flex-grow hidden md:block">
+
+            <ul className=" flex flex-grow justify-end flex-wrap items-center ">
             {loggedIn ? (
               <li>
-                <button className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3" onClick={logout}>
+                <button className="btn-sm w-40 text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3" onClick={logout}>
                   <span>Logout</span>
                   <svg className="w-3 h-3 fill-current text-gray-400 flex-shrink-0 ml-2 -mr-1" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z" fillRule="nonzero" />
                   </svg>                  
                 </button>
               </li>):<li>
-                <button className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3" onClick={login}>
+                <button className="btn-sm w-40 text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3" onClick={login}>
                   <span>Login / Sign Up</span>
                   <svg className="w-3 h-3 fill-current text-gray-400 flex-shrink-0 ml-2 -mr-1" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z" fillRule="nonzero" />
@@ -81,20 +85,54 @@ export default function Header() {
                 </button>
               </li>}
               <li>
-                <Link href="https://search.anishnayak.com" className="btn-sm text-gray-100 bg-gray-700 hover:bg-gray-400 ml-3">Search</Link>
+                <Link href="https://search.anishnayak.com" className="btn-sm w-40 text-gray-100 bg-gray-700 hover:bg-gray-400 ml-3">Search</Link>
               </li>
               <li>
-                <Link href="/Contact" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
+                <Link href="/Contact" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3 w-40">
                   <span>Contact</span>
                   <svg className="w-3 h-3 fill-current text-gray-400 flex-shrink-0 ml-2 -mr-1" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z" fillRule="nonzero" />
                   </svg>                  
                 </Link>
               </li>
-            </ul>
-            
+            </ul> 
+           
           </nav>
+          <div className='flex items-center md:hidden'><button onClick={handlenav}>{!click?<MenuIcon className='w-5'/>:<XIcon className='w-5 z-10	'/>}</button></div>
+          <div className={click?'':'hidden'}>
 
+
+
+<ul className=" flex flex-col flex-grow mt-24 justify-end flex-wrap gap-2 items-center ">
+<li>
+    <Link href="https://search.anishnayak.com" className="btn-sm w-40 text-gray-100 bg-gray-700 hover:bg-gray-400 ml-3">Search</Link>
+  </li>
+  <li>
+    <Link href="/Contact" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3 w-40">
+      <span>Contact</span>
+      <svg className="w-3 h-3 fill-current text-gray-400 flex-shrink-0 ml-2 -mr-1" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z" fillRule="nonzero" />
+      </svg>                  
+    </Link>
+  </li>
+{loggedIn ? (
+  <li>
+    <button className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3 w-40" onClick={logout}>
+      <span>Logout</span>
+                     
+    </button>
+  </li>):<li>
+    <button className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3 w-40" onClick={login}>
+      <span>Login / Sign Up</span>
+                       
+    </button>
+  </li>}
+  
+  
+</ul> 
+
+
+          </div>
         </div>
       </div>
     </header>
