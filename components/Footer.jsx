@@ -1,10 +1,13 @@
 import React from 'react';
 import  Link  from 'next/link';
+import CookieConsent from "react-cookie-consent";
+
 const today = new Date();
 function Footer() {
   return (
     <footer>
       <div className="max-w-6xl border border-gray-500 border-4 mx-auto px-4 sm:px-6">
+      <CookieConsent style={{ background: "#18181B" }}>This website uses cookies to enhance the user experience.</CookieConsent>
 
       
         {/* Bottom area */}
@@ -37,7 +40,9 @@ function Footer() {
 
           {/* Copyrights note */}
           <div className="text-sm text-gray-600 mr-4"><span>&copy;</span> {today.getFullYear()} AnishNayak, Inc.  All rights reserved</div>
-
+          <a href="https://www.abuseipdb.com/user/109337" title="AbuseIPDB is an IP address blacklist for webmasters and sysadmins to report IP addresses engaging in abusive behavior on their networks">
+	<img src="https://www.abuseipdb.com/contributor/109337.svg" alt="AbuseIPDB Contributor Badge" className='w-40' />
+</a>
         </div>
 
       </div>
