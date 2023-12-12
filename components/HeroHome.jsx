@@ -34,9 +34,9 @@ function HeroHome() {
           {/* Section header */}
           <div className="text-left pb-12 md:pb-16">
             <h1 className="text-5xl sm:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out"><TypeAnimation sequence={[1500,'visiBuddy' ]} speed={250}  wrapper="span" repeat={Infinity} /></h1>
-            <h2 className='text-xl sm:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 'data-aos="zoom-y-out"><span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400"><TypeAnimation sequence={[1500,"Next Gen mobile control!", ]} speed={250}  wrapper="span" cursor={true} repeat={Infinity} /></span></h2>
+            <h2 className='text-xl sm:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 'data-aos="zoom-y-out"><span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400"><TypeAnimation sequence={[1500,"Next Gen mobile control", ]} speed={250}  wrapper="span" cursor={true} repeat={Infinity} /></span></h2>
             <div className="flex flex-col	  mx-auto">
-              <p className="text-3xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="2500">Welcome to the tech hub</p>
+              <p className="text-3xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="2500">Mobile Control for enterprises, schools, and businesses</p>
             </div>
           </div>
 

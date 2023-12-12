@@ -13,12 +13,12 @@ export default function Document() {
 
     <meta name="theme-color" content="#000000" />
     <meta name="keywords" content="HTML, CSS, JavaScript, Anish, Anish Nayak, AnishNayak"/>
-    <meta name="author" content="Anish Nayak"/>
-    <meta name="application-name" content="Anish Nayak" />
+    <meta name="author" content="Digicopt Visibuddy"/>
+    <meta name="application-name" content="VisiBuddy" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-<meta name="apple-mobile-web-app-title" content="Anish Nayak" />
-<meta name="description" content="Website of Anish Nayak" />
+<meta name="apple-mobile-web-app-title" content="VisiBuddy" />
+<meta name="description" content="Digicopt Visibuddy" />
 <meta name="format-detection" content="telephone=no" />
 <meta name="mobile-web-app-capable" content="yes" />
 
@@ -28,17 +28,17 @@ export default function Document() {
 <link rel="shortcut icon" href="/favicon.ico" />
 
 
-<meta name="twitter:card" content="Anish Nayak" />
-<meta name="twitter:url" content="https://anishnayak.com" />
-<meta name="twitter:title" content="Anish Nayak" />
-<meta name="twitter:description" content="Website of Anish Nayak" />
+<meta name="twitter:card" content="VisiBuddy" />
+<meta name="twitter:url" content="https://visibuddy.digicopt.com" />
+<meta name="twitter:title" content="VisiBuddy" />
+<meta name="twitter:description" content="Digicopt Visibuddy" />
 <meta name="twitter:image" content="logo192.png" />
 <meta name="twitter:creator" content="@AnishNayak1" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Anish Nayak" />
-<meta property="og:description" content="Website of Anish Nayak" />
-<meta property="og:site_name" content="Anish Nayak" />
-<meta property="og:url" content="https://anishnayak.com" />
+<meta property="og:title" content="VisiBuddy" />
+<meta property="og:description" content="Digicopt Visibuddy" />
+<meta property="og:site_name" content="VisiBuddy" />
+<meta property="og:url" content="https://visibuddy.digicopt.com" />
 
 
     <meta
